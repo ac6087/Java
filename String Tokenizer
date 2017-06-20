@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+      public static void main(String[] args) 
+    {
+      Scanner scan = new Scanner(System.in);
+      String s=scan.nextLine();
+      s.trim();
+      StringTokenizer token = new StringTokenizer(s,("[_\\@!?.', ]"));
+        int count = token.countTokens();
+        System.out.println(count);
+        while(token.hasMoreTokens()){
+            System.out.println(token.nextToken());
+        }
+     scan.close(); 
+    }
+}
