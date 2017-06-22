@@ -11,7 +11,8 @@ public class Solution {
       BigInteger n = in.nextBigInteger();
       in.close();
       if (n.isProbablePrime(1) == true) {
-          System.out.println("Prime");
-      }
+          System.out.println("prime");
+      }   // alternatively, could have used conditional statement
+      else System.out.println("not prime");
    }
 }
