@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int d,q,x,y;
+        ArrayList<ArrayList<Integer>> arrList = new ArrayList<>();
+        for(int i=0;i<n;i++){
+            d = scan.nextInt();
+            ArrayList<Integer> List = new ArrayList<>();
+            for(int j=0;j<d;j++){  
+                List[i].add(scan.nextInt());                
+            }
+            arrList.add(List);
+        }
+        q=scan.nextInt();
+        for(int i=0;i<q;i++){
+            x=scan.nextInt();
+            y=scan.nextInt();
+            try{
+                System.out.println(arrList[x-1].get(y-1));
+            } catch(Exception e){
+                System.out.println("ERROR!");
+            }
+        }
+    }
+}
